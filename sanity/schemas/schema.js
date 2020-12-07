@@ -1,12 +1,28 @@
-// First, we must import the schema creator
-import createSchema from 'part:@sanity/base/schema-creator';
-// Then import schema types from any plugins that might expose them
-import schemaTypes from 'all:part:@sanity/base/schema-type';
-// Then we give our schema to the builder and provide the result to Sanity
+import createSchema from "part:@sanity/base/schema-creator";
+import schemaTypes from "all:part:@sanity/base/schema-type";
+
+import logo from "./logo";
+import banner from "./banner";
+import sideDish from "./sideDish";
+import mainDish from "./sandwich";
+import drink from "./drink";
+import combo from "./combo";
+import team from "./team";
+import copywriting from "./copywriting";
+import contactInfo from "./contactInfo";
+
 export default createSchema({
-  // We name our schema
-  name: 'default',
-  // Then proceed to concatenate our document type
-  // to the ones provided by any plugins that are installed
-  types: schemaTypes.concat([]),
+  name: "default",
+
+  types: schemaTypes.concat([
+    logo,
+    banner,
+    copywriting,
+    sideDish,
+    mainDish,
+    drink,
+    combo,
+    team,
+    contactInfo,
+  ]),
 });

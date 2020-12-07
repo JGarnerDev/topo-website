@@ -1,51 +1,41 @@
+@import "../../styles/variables";
+
 #Nav {
   position: sticky;
   top: 0;
 
+  z-index: 1000;
+
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
-  height: 60px;
+  height: 80px;
   width: 100%;
 
-  background: white;
+  padding: 0 10px;
 
+  background: $PC2;
   ul {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 
-    width: 80%;
-    max-width: 1200px;
+    margin: 0;
+    padding: 0;
 
     list-style: none;
 
-    #left,
-    #right {
-      display: flex;
-      justify-content: space-around;
-      padding: 0 10px;
-      flex-grow: 1;
-      max-width: 30%;
-      li a {
-        color: black;
+    li {
+      font-size: 16px;
+      padding: 4px 10px;
+      a {
         text-decoration: none;
-        font-weight: bold;
-        font-size: 1.2em;
+        color: black;
       }
     }
-    #logo {
-      position: absolute;
-      top: 20px;
-      left: 35%;
+  }
 
-      height: 80px;
-      width: 30%;
-
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px;
-
-      background: white;
-    }
+  img {
+    max-width: 100px;
   }
 }

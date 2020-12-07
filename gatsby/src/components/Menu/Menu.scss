@@ -1,0 +1,107 @@
+@import "../../styles/variables";
+
+#Menu {
+  .menu-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .productCard,
+    .drink,
+    .combo {
+      width: 90vw;
+      padding-bottom: 10px;
+
+      margin-bottom: 20px;
+
+      background: $NC3;
+
+      -webkit-box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.4);
+      box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.4);
+
+      .details {
+        padding: 10px;
+        p {
+          padding: 8px;
+          width: 92%;
+        }
+        h4 {
+          float: right;
+        }
+      }
+    }
+
+    .drink,
+    .combo {
+      border-radius: 20px;
+    }
+    .combo {
+      margin: 10px;
+      max-width: 600px;
+    }
+
+    .productCard {
+      display: flex;
+      flex-direction: column;
+      width: 90vw;
+      padding-bottom: 10px;
+
+      margin-bottom: 20px;
+
+      background: $NC3;
+
+      -webkit-box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.4);
+      box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.4);
+
+      .details {
+        position: relative;
+        bottom: 30px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        flex-grow: 1;
+
+        padding: 10px;
+        line-height: 16px;
+
+        p {
+          flex-grow: 1;
+          min-height: 120px;
+          padding: 8px;
+        }
+        h3,
+        h4 {
+          font-size: 24px;
+          color: $PC1;
+        }
+
+        h4 {
+          position: absolute;
+          bottom: 0;
+          right: 10px;
+        }
+      }
+
+      &:nth-child(odd) {
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 50px;
+        img {
+          border-top-right-radius: 50px;
+        }
+      }
+      &:nth-child(even) {
+        border-bottom-right-radius: 50px;
+        border-top-left-radius: 50px;
+        img {
+          border-top-left-radius: 50px;
+        }
+      }
+    }
+
+    img {
+      max-height: 80%;
+    }
+  }
+}

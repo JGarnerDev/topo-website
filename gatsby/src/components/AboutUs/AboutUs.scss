@@ -1,0 +1,25 @@
+@import "../../styles/variables";
+
+#AboutUs {
+  position: relative;
+
+
+  .description {
+    position: absolute;
+    bottom: 20vh;
+    right: 10px;
+    .section-header {
+      color: $PC1;
+      font-size: 80px;
+      padding: 0;
+      transform: translateX(-20vw);
+    }
+    p {
+      background: white;
+      width: 600px;
+      max-width: 80vw;
+      padding: 20px;
+      border-radius: 20px;
+    }
+  }
+}

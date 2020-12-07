@@ -5,37 +5,29 @@ import "./Nav.scss";
 
 // Scrolling to links is done by '/#id' or '/.class'
 
-const Nav = () => {
+const Nav = ({ logo }) => {
   return (
     <nav id="Nav">
+      <div id="logo-wrapper">
+        <img src={logo} alt="The Topo logo" />
+      </div>
       <ul>
-        <div id="left">
-          <li>
-            <AnchorLink to="/#Hero" title="Home">
-              <span>Home</span>
-            </AnchorLink>
-          </li>
-          <li>
-            <AnchorLink to="/#Menu" title="Menu">
-              <span>Menu</span>
-            </AnchorLink>
-          </li>
-        </div>
+        <li>
+          <AnchorLink to="/#Menu" title="Menu">
+            <span>Menu</span>
+          </AnchorLink>
+        </li>
 
-        <div id="logo"></div>
-
-        <div id="right">
-          <li>
-            <AnchorLink to="/#AboutUs" title="Our team">
-              <span>Our team</span>
-            </AnchorLink>
-          </li>
-          <li>
-            <AnchorLink to="/#Contact" title="Contact">
-              <span>Contact</span>
-            </AnchorLink>
-          </li>
-        </div>
+        <li>
+          <AnchorLink to="/#AboutUs" title="Our team">
+            <span>Our team</span>
+          </AnchorLink>
+        </li>
+        <li>
+          <AnchorLink to="/#Contact" title="Contact">
+            <span>Contact</span>
+          </AnchorLink>
+        </li>
       </ul>
     </nav>
   );

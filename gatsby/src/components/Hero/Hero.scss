@@ -1,0 +1,27 @@
+@import "../../styles/variables";
+#Hero {
+  .gatsby-image-wrapper {
+    height: 80vh;
+    margin-bottom: -40px;
+  }
+  .cta {
+    position: relative;
+    bottom: 15vh;
+
+    width: 300px;
+
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      width: 120px;
+      height: 50px;
+      text-transform: uppercase;
+
+      border: 0;
+      background: $PC2;
+    }
+  }
+}

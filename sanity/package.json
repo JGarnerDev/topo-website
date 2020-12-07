@@ -4,8 +4,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "package.json",
-  "author": "Jeffrey Garner",
-  "license": "UNLICENSED",
   "scripts": {
     "lint": "eslint .",
     "start": "sanity start"
