@@ -11,7 +11,7 @@ export default {
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-anchor-links`,
-      options: { duration: 3000, offset: -80 },
+      options: { duration: 3000, offset: -40 },
     },
     {
       resolve: `gatsby-source-sanity`,

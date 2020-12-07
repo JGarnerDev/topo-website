@@ -1,27 +1,54 @@
 @import "../../styles/variables";
 #Hero {
+  position: relative;
+  justify-content: center;
+
   .gatsby-image-wrapper {
     height: 80vh;
     margin-bottom: -40px;
   }
-  .cta {
-    position: relative;
-    bottom: 15vh;
 
-    width: 300px;
-
-    margin: auto;
+  &-content {
+    position: absolute;
 
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    button {
-      width: 120px;
-      height: 50px;
-      text-transform: uppercase;
+    height: 50%;
+    width: 60%;
+    #logo {
+      width: 80%;
+    }
+    #header {
+      position: relative;
+      bottom: 10px;
+      left: 80px;
+      font-size: calc(2vw);
+      padding: 10px;
+      border-radius: 20px;
+      background: rgb(255, 255, 255);
+      color: $PC1;
+    }
+    .cta {
+      position: relative;
+      bottom: -10vh;
 
-      border: 0;
-      background: $PC2;
+      width: 120%;
+      max-width: 400px;
+
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        width: 120px;
+        height: 50px;
+        text-transform: uppercase;
+
+        border: 0;
+        background: $PC2;
+      }
     }
   }
 }

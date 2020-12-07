@@ -14,8 +14,6 @@
 
       margin-bottom: 20px;
 
-      background: $NC3;
-
       -webkit-box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.4);
       box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.4);
 
@@ -29,6 +27,16 @@
           float: right;
         }
       }
+    }
+
+    .productCard {
+      background: $NC3;
+    }
+    .drink {
+      background: $NC4;
+    }
+    .combo {
+      background: $NC5;
     }
 
     .drink,

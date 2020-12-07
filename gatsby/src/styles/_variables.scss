@@ -2,9 +2,12 @@
 
 $PC1: #ff265c;
 $PC2: rgb(244, 165, 49);
+$PC2L: rgb(253, 205, 101);
+
 $NC1: rgb(0, 17, 51);
-$NC2: rgb(50, 69, 109);
-$NC3: rgb(227, 231, 235);
+$NC3: linear-gradient(to bottom, white 0%, white 75%, $PC2L 75%, $PC2L 100%);
+$NC4: linear-gradient(to bottom, white 0%, white 50%, $PC2L 50%, $PC2L 100%);
+$NC5: linear-gradient(to bottom, white 0%, white 65%, $PC2L 65%, $PC2L 100%);
 
 //  Media queries
 

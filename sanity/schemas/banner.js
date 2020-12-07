@@ -16,5 +16,11 @@ export default {
       description: "Image",
       options: { hotspot: true },
     },
+    {
+      name: "text",
+      title: "Banner text",
+      type: "string",
+      description: "The text people see when they enter your website",
+    },
   ],
 };

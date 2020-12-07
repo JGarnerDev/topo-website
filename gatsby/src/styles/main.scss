@@ -110,6 +110,14 @@ main {
         width: 100%;
         height: 60vh;
       }
+      #logo {
+        width: 200px;
+      }
+      #header {
+        position: initial;
+        font-size: 12px;
+        width: max-content;
+      }
     }
 
     #AboutUs {
