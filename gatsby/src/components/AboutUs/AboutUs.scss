@@ -3,7 +3,9 @@
 #AboutUs {
   position: relative;
 
-
+  .gatsby-image-wrapper {
+    max-height: 60vh;
+  }
   .description {
     position: absolute;
     bottom: 20vh;
